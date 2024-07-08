@@ -1,1 +1,3 @@
-pnpm test
+pnpm pre-check
+
+echo "Checking "

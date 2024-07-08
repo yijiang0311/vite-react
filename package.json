@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "eslint": "eslint --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pre-check": "tsc --noEmit && npx lint-staged"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
@@ -26,6 +27,7 @@
     "styled-jsx": "^5.1.6"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^19.2.2",
     "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
