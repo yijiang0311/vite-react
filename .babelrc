@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "styled-jsx/babel"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "targets": "chrome 70",
+  "browserslist": [
+    "last 5 version",
+    "> 1%",
+    "IE >= 11"
+  ]
+}
